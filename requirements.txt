@@ -1,0 +1,124 @@
+#preprocessing.py --------------------------------------------------------------
+
+pandas
+numpy
+scipy
+spacy
+nltk
+time
+
+# app.py --------------------------------------------------------------
+
+flask
+views
+
+# coreferenceresolver.py --------------------------------------------------------------
+
+spacy
+spacy_transformers
+spacy_experimental
+
+# createROC.py --------------------------------------------------------------
+
+sklearn
+joblib
+pandas
+numpy
+matplotlib
+
+# exploratorydataanalysis.py --------------------------------------------------------------
+
+seaborn
+joblib
+pandas
+numpy
+matplotlib
+sklearn
+wordcloud
+
+# NB_classifier.py --------------------------------------------------------------
+
+sklearn
+joblib
+pandas
+numpy
+matplotlib
+time
+# also depends on --->
+# plotROC from createROC.py
+
+# RF_classifier.py --------------------------------------------------------------
+
+sklearn
+joblib
+pandas
+numpy
+matplotlib
+time
+# also depends on --->
+# plotROC from createROC.py
+
+# SVM_classifier.py --------------------------------------------------------------
+
+sklearn
+joblib
+pandas
+numpy
+matplotlib
+time
+# also depends on --->
+# plotROC from createROC.py
+
+# ner.py --------------------------------------------------------------
+
+spacy
+pathlib
+# also depends on --->
+# getInfoFromWeb from webscraper.py
+
+# POSTagger.py --------------------------------------------------------------
+
+spacy
+pathlib
+
+# sentimentanalyser.py --------------------------------------------------------------
+
+nltk
+joblib
+spacy
+re
+
+
+# POSTagger.py  --------------------------------------------------------------
+
+beautifulsoup
+scapy
+
+# textsummarizer.py --------------------------------------------------------------
+
+spacy
+nltk
+
+# views.py --------------------------------------------------------------
+
+flask
+# also depends on --->
+# ner.py
+# POSTagger.py
+# sentimentanalyzer.py
+
+# webscraper.py --------------------------------------------------------------
+
+urllib
+requests
+bs4
+
+# installation guides for language models --->
+# pip install spacy
+# python -m spacy download en_core_web_lg
+# python -m spacy downlaod en_core_web_sm
+# python -m spacy downlaod en_coreference_web_trf
+
+
+
+

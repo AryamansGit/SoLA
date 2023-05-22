@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+h1
+{
+    color: #00dfc4;
+    transition: 1s;
+}
+h1:hover {
+    animation: chill 4s;
+}
+@keyframes chill {
+    100% {
+        color: gold;
+        letter-spacing: 4px;
+    }
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+    background: #1d2b3a;
+}
+.inputBox
+{
+    position: relative;
+    width: 250px;
+}
+.inputBox input,.inputBox textarea
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0.25);
+    background: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.5s;
+}
+.inputBox textarea {
+    border: 1px solid #00dfc4;
+    resize: none;
+    overflow-y: scroll;
+    cursor: default;
+}
+.inputBox textarea:hover {
+    scale: 1.1;
+}
+::-webkit-scrollbar {
+    width: 1em;
+}
+::-webkit-scrollbar-track {
+    background: #1d2b3a;
+}
+::-webkit-scrollbar-track:hover {
+    border: 1px solid hsl(29 98% 52% / 0.4);
+    background: hsl(29 98% 52% / 0.1);
+}
+::-webkit-scrollbar-thumb {
+    background: hsl(173 100% 44% / 1);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    border: 1px solid #00dfc4;
+    background: hsl(173 100% 44% / 0.5);
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.inputBox label{
+    position: absolute;
+    left:0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: #1d2b3a;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.inputBox #userinput:valid ~ label,
+.inputBox #userinput:focus ~ label {
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.2em;
+}
+.inputBox #userinput:valid,
+.inputBox #userinput:focus {
+    border: 1px solid #00dfc4;
+}
+#resultlabel {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+#submit {
+    margin-top: 15px;
+    transition: translate 2s;
+}
+#submit:hover {
+    box-shadow: 2px 2px 15px 5px hsl(29 98% 52% / 0.4);
+    border: 1px solid #fd7f0a;
+    translate: 10px;
+    transition: translate .25s;
+}
+#userinput:hover {
+    border: 1px solid #00dfc4;
+    translate: 2px;
+}
+nav {
+   /* position: fixed;
+    top: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: gold;
+}
+nav ul li a:hover {
+    color: #fd7f0a;
+    font-size: larger;
+}
+#blue {
+    color: blue;
+}
+#red {
+    color: red;
+}
+
+
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Software-defined Language Analyser</title>
+    <link rel="stylesheet" href="/static/homestyle.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#"> Sentiment Analyser </a></li>
+            <li><a href="ner"> Named Entity Recogniser </a></li>
+            <li><a href="pos"> POS Tagger</a></li>
+        </ul>
+    </nav>
+    <h1>SoLA Sentiment Analyser</h1>
+    <form method="post" id="form">
+        <!-- <label for="userinput" id="userinputlabel">Write a Review : </label><br> -->
+        <div class="inputBox">
+            <input type="text" id="userinput" name="userinput" autocomplete="off" required="required"/><br>
+            <label id="inputlabel" for="userinput"> Write a Review </label>
+            <input type="submit" id="submit" name="submit" value="Submit" />
+            <label for="result" id="resultlabel" > Predicting... </label>
+            {% if result %}
+            <textarea onmouseover="highlightResult()" onmouseleave="initialState()" id="result"  readonly="readonly" name="result" rows="5" cols="50">{{ result }} {{pos}} {{neg}} {{ input }}</textarea>
+            {% endif %}
+        </div>
+        <!-- &#13;&#10; for newline -->
+    </form>
+    <script type="text/javascript" src=" {{ url_for('static',filename='sentiment.js')}}"></script>
+</body>
+</html>

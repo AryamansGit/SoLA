@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Software-defined Language Analyser</title>
+    <link rel="stylesheet" href="/static/homestyle.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/"> Sentiment Analyser </a></li>
+            <li><a href="#"> Named Entity Recogniser </a></li>
+            <li><a href="pos"> POS Tagger</a></li>
+        </ul>
+    </nav>
+    <h1>SoLA NER</h1>
+    <form method="post">
+        <div class="inputBox">
+            <input type="text" id="userinput" name="userinput" autocomplete="off" required="required" />
+            <label for="userinput" id="inputlabel">Write a Sentence</label>
+            <input type="submit" id="submit" name="submit" value="Submit" />
+        </div>
+    </form>
+    <!-- <script type="text/javascript" src=" {{ url_for('static',filename='sentiment.js')}}"></script> -->
+</body>
+</html>
