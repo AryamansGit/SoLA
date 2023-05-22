@@ -114,10 +114,14 @@ requests
 bs4
 
 # installation guides for language models --->
+# Create a Dataset folder in the project directory to save these models
 # pip install spacy
 # python -m spacy download en_core_web_lg
 # python -m spacy downlaod en_core_web_sm
 # python -m spacy downlaod en_coreference_web_trf
+
+# installation guide for dataset ---->
+# download link <https://drive.google.com/file/d/0Bz8a_Dbh9QhbZVhsUnRWRDhETzA/view?usp=share_link&resourcekey=0-Rp0ynafmZGZ5MflGmvwLGg>
 
 
 
